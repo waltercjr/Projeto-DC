@@ -31,8 +31,9 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-span{
 
-    width: 1px;
-    height: 10px;
+span {
+    position: relative;
+
+    bottom: 20px;
 }
