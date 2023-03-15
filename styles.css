@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.tituloebotao {
+    padding-left: 160px;
+    padding-top: 190px;
+}
+
+h1 {
+    font-size: 65px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(24, 62, 97);
+}
+.botaoamarelo {
+    background-color: yellow;
+    color: rgb(35, 82, 154);
+    width: 15%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subtitulo {
+    color: rgb(109, 121, 129);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+
+    width: 1px;
+    height: 10px;
+}
