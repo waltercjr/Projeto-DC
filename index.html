@@ -9,28 +9,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<style>
-    span
-    {
-        position: absolute;
-        right: 10px;
-    }
-</style>
-<body>
-    <div class="search">
-        <input type="text" name="serach" id="search" placeholder="search by make, model, or keyword">
-        <i class='bx bx-search bx-md'></i>
-    </div>
-
-    <button class="message-button">
-        <i class='bx bxs-message white bx-md'></i>
-    </button>
-    
-    <div class="feedback">
-        <button><b>FEEDBACK</b></button>
-    </div>
-
     <script type="text/javascript">
         function abrir() {
             document.getElementById('a-popup').style.display = 'block';
@@ -38,13 +16,19 @@
         function fechar() {
             document.getElementById('a-popup').style.display = 'none';
         }
-
     </script>
 </head>
 <body>
+    
+    <button class="message-button">
+        <i class='bx bxs-message white bx-sm'></i>
+    </button>
+    
+    <div class="feedback">
+        <button><b>FEEDBACK</b></button>
+    </div>
     <header>
         <div class="header-container">
-
             <nav>
                 <div class="lista">
                     <div class="logo">
@@ -61,32 +45,36 @@
                     </div>
                     <div>
                         <select class="options" name="more" id="more" value="More" onmouseover="abrir();"
-                            onmouseleave="fechar();">
-                            <option value="">More</option>
-                        </select>
-                    </div>
+                        onmouseleave="fechar();">
+                        <option value="">More</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="login">
+            <nav>
+                <div class="div-icons">
+                    <button class="botao">
+                        <div>
+                            <img class="img-btn" src="imagens/pino.png" alt="">
+                        </div>
+                        <div class="zip-city">
+                            <span class="zip">Your store for 66204</span><br>
+                            <span><select class="city" name="" id="">
+                                <option value="">Kansas city</option>
+                            </select></span>
+                        </div>
+                    </button>
+                    <a id="favoritos" href=""><img class="icons" src="imagens/coracao.png" alt=""></a>
+                    <a id="login" href=""><img class="icons" src="imagens/pessoa.png" alt=""></a>
                 </div>
             </nav>
-            <div class="login">
-                <nav>
-                    <div class="div-icons">
-                        <button class="botao">
-                            <div>
-                                <img class="img-btn" src="imagens/pino.png" alt="">
-                            </div>
-                            <div class="zip-city">
-                                <span class="zip">Your store for 66204</span><br>
-                                <span><select class="city" name="" id="">
-                                        <option value="">Kansas city</option>
-                                    </select></span>
-                            </div>
-                        </button>
-                        <a id="favoritos" href=""><img class="icons" src="imagens/coracao.png" alt=""></a>
-                        <a id="login" href=""><img class="icons" src="imagens/pessoa.png" alt=""></a>
-                    </div>
-                </nav>
-            </div>
         </div>
+    </div>
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="&#160;Search by make, model, or keyword">
+        <button class="btn-search"><i class='bx bx-search bx-sm'></i></button>
+    </div>
         <img class="imagem" src="imagens/lycg-xl.jpg" alt="">
         <div id="a-popup" class="a-popup">
             <a class="a1" href="">Service & Repair</a>
@@ -99,51 +87,10 @@
         Love Your Car <br> Guarantee<span><li class='bx bx-registered bx-sm' ></li></span>
     </h1>
     <br>
-    <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi)<i class='bx bxs-info-circle'></i> </p> 
-    <br><br>
+    <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi) <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle' style='color:#686464'></i></button></p>
+    <br>
     <button class="botaoamarelo">SEARCH CARS</button>
 </section>
-<section>
-    <img class="imagem-s3" src="imagens/rtb-xl.jpg" alt="">
-    <div class="div-s3">
-        <h1 class="h1-s3">The way it <br>
-            should be</h1>
-        <ul>
-            <li class="li-s3">
-                <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Do more from home <button class="btn-info"><i class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
-                <p class="p-s3">Express pickup and delivery options available</p>
-            </li>
-            <li class="li-s3">
-                <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Test drives for real life <button class="btn-info"><i class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
-                <p class="p-s3">24-hour take home test drives</p>
-            </li>
-            <li class="li-s3">
-                <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Love it or return it <button class="btn-info"><i class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
-                <p class="p-s3">30-day money back (up to 1500 mi.)</p>
-            </li>
-            <li class="li-s3">
-                <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;All major systems covered <button class="btn-info"><i class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
-                <p class="p-s3">90 days or 4,000 miles (whichever comes first)</p>
-            </li>
-        </ul>
-        <button class="btn-s3">
-            <a class="a1-s3" href="">SHOP ALL CARS</a>
-        </button>
-    </div>
-</section>
-        <section class="tituloebotao">
-            <h1>
-                Love Your Car <br> Guarantee<span>
-                    <li class='bx bx-registered bx-sm'></li>
-                </span>
-            </h1>
-            <br>
-            <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi)<i class='bx bxs-info-circle'></i>
-            </p>
-            <br><br>
-            <button class="botaoamarelo">SERCH CARS</button>
-        </section>
-    </header>
     <section>
         <div class="blocosec2">
             <div>
@@ -192,19 +139,42 @@
                         <option value="Good (800 + FICO&reg Score)">Good (800 + FICO&reg Score)</option>
                         <option value="Challenged (800 + FICO&reg Score)">Challenged (800 + FICO&reg Score)</option>
                     </select>
-
-                </div>               
-                
+                </div>
             </div>
             <div class="container3">
-                <p id="txtcont3">Est. Vehicle Price <button class="btn-info"><i class='bx bxs-info-circle' style='color:#686464'  ></i></button></p>
+                <p id="txtcont3">Est. Vehicle Price <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle' style='color:#686464'  ></i></button></p>
                 <p id="txt-lg-cont3">$ 20,791</p>
-                <button>GET PRE-QUALIFIELD</button>
+                <button class="btn-cont3">GET PRE-QUALIFIELD</button>
             </div>
         </div>
     </section>
     <section>
-        <h1>teste</h1>
+        <img class="imagem-s3" src="imagens/rtb-xl.jpg" alt="">
+        <div class="div-s3">
+            <h1 class="h1-s3">The way it <br>
+                should be</h1>
+            <ul>
+                <li class="li-s3">
+                    <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Do more from home <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
+                    <p class="p-s3">Express pickup and delivery options available</p>
+                </li>
+                <li class="li-s3">
+                    <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Test drives for real life <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
+                    <p class="p-s3">24-hour take home test drives</p>
+                </li>
+                <li class="li-s3">
+                    <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;Love it or return it <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
+                    <p class="p-s3">30-day money back (up to 1500 mi.)</p>
+                </li>
+                <li class="li-s3">
+                    <h2 class="lista-s3"><i class='bx bx-sm bx-check' style='color:#2f74ff'  ></i>&#160;All major systems covered <button class="btn-info"><i id="btn-info" class='bx bxs-info-circle bx-flip-horizontal' style='color:#898585' ></i></button></h2>
+                    <p class="p-s3">90 days or 4,000 miles (whichever comes first)</p>
+                </li>
+            </ul>
+            <button class="btn-s3">
+                <a class="a1-s3" href="">SHOP ALL CARS</a>
+            </button>
+        </div>
     </section>
 </body>
 </html>

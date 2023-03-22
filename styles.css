@@ -1,24 +1,32 @@
-
-body
-{
-    margin: 0;
-    padding: 0;
-    height: 1000px;
-}
-
 .search
 {
     display: flex;
-    position: relative;
-    top: 70px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
 }
 #search
 {
     display: flex;
-    margin-left: 10%;
-    width : 80%;
-    height: 5vh;
+    margin-left: 11%;
+    width : 78%;
+    height: 7vh;
     border-radius: 6px;
+    border: none;
+}
+
+#search:hover {
+    border: solid rgb(5, 51, 97) 2px;
+}
+
+.btn-search {
+    margin-left: -35px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-search:hover {
+    cursor: pointer;
 }
 
 .feedback > button
@@ -26,11 +34,13 @@ body
     font-family: Arial, Helvetica, sans-serif;
     border: none;
     background-color: rgb(255, 255, 255);
-    color: black;
-    height: 20px;
+    color: #555;
+    height: 25px;
     rotate: -90deg;   
-    right: 0;
+    right: -40px;
     position: absolute;
+    padding: 10px 20px 25px;
+    
 }
 .feedback
 {
@@ -45,11 +55,11 @@ body
 
 .message-button
 {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
     border: none;
-    background-color: rgb(10, 10, 122);
+    background-color: rgb(19, 112, 241);
     position: fixed;
     right: 50px;
     bottom: 20px;
@@ -74,30 +84,38 @@ body
 
 .tituloebotao {
     padding-left: 160px;
-    padding-top: 190px;
+    padding-top: 160px;
 }
 
 .titulo {
     font-size: 65px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: CarMaxSharpSansDisp-Bold,Frutiger,â€˜Frutiger Linotypeâ€™,Univers,Calibri,â€˜Gill Sansâ€™,â€˜Gill Sans MTâ€™,â€˜Myriad Proâ€™,Myriad,â€˜DejaVu Sans Condensedâ€™,â€˜Liberation Sansâ€™,â€˜Nimbus Sans Lâ€™,Tahoma,Geneva,â€˜Helvetica Neueâ€™,Helvetica,Arial,sans-serif;
     color: rgb(24, 62, 97);
 }
 
 .botaoamarelo {
-    background-color: yellow;
-    color: rgb(35, 82, 154);
-    width: 15%;
+    background-color: rgb(255, 213, 0);
+    color: rgb(5, 51, 97);
+    width: 250px;
+    height: 50px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.botaoamarelo:hover {
+    background-color: rgb(255, 234, 0);
 }
 
 .subtitulo {
-    color: rgb(109, 121, 129);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #666;
+    font-family: CarMaxSharpSansDisp-Bold,Frutiger,â€˜Frutiger Linotypeâ€™,Univers,Calibri,â€˜Gill Sansâ€™,â€˜Gill Sans MTâ€™,â€˜Myriad Proâ€™,Myriad,â€˜DejaVu Sans Condensedâ€™,â€˜Liberation Sansâ€™,â€˜Nimbus Sans Lâ€™,Tahoma,Geneva,â€˜Helvetica Neueâ€™,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: .3px;
 }
 
 
@@ -121,9 +139,9 @@ span {
 .lista {
     display: flex;
     gap: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: CarMaxSharpSansDisp-Bold,Frutiger,â€˜Frutiger Linotypeâ€™,Univers,Calibri,â€˜Gill Sansâ€™,â€˜Gill Sans MTâ€™,â€˜Myriad Proâ€™,Myriad,â€˜DejaVu Sans Condensedâ€™,â€˜Liberation Sansâ€™,â€˜Nimbus Sans Lâ€™,Tahoma,Geneva,â€˜Helvetica Neueâ€™,Helvetica,Arial,sans-serif;
     font-weight: 100;
-    letter-spacing: -.5px;
+    letter-spacing: .3px;
     font-size: 16px;
     align-items: center;
 }
@@ -213,6 +231,7 @@ span {
 
 .zip-city {
     text-align: left;
+    padding-top: 10px;
 }
 
 .zip {
@@ -250,7 +269,7 @@ span {
     width: 350px;
     height: 470px;
     margin-left: 10%;
-    margin-top: 500px;
+    margin-top: 300px;
     border-radius: 20px;
     padding-top: 50px;
     display: flex;
@@ -264,6 +283,13 @@ span {
     font-size: large;
     border: none;
     background-color: transparent;
+    border-radius: 25px;
+    align-items: center;
+}
+
+#btn-info:hover {
+    cursor: pointer;
+    border: solid rgb(7, 94, 182) 2px;
     border-radius: 25px;
 }
 
@@ -400,17 +426,20 @@ ul {
         height: 60px;
         border-radius: 10px;
     
-    }
-    #container :hover {
+}
+
+#container :hover {
         border: solid rgb(5, 51, 97) 1px;
-    }
-    .fundocar3 {
+}
+
+.fundocar3 {
         background-color: rgb(241, 238, 238);
         width: 153px;
         height: 60px;
         border-radius: 10px 10px 0 0;
-        border-bottom: solid 1px rgb(7, 39, 126);
-    }
+        border-bottom: solid 1px rgb(5, 51, 97);
+}
+
 .txtvalue {
     margin-top: 6px;
     margin-left: 8px;
@@ -443,7 +472,7 @@ ul {
 
 #txtcont3 {
     font-size: 10px;
-    width: 180px;
+    max-width: 100%;
     color: rgb(5, 51, 97);
     font-size: 18px;
     text-align: center;
@@ -455,23 +484,26 @@ ul {
     font-size: 50px;
     letter-spacing: 0px;
     line-height: 50px;
-    width: 180px;
+    max-width: 100%;
     text-align: center;
     font-family: CarMaxSharpSansDisp-Bold, Frutiger, "‘Frutiger Linotype’", Univers, Calibri, "‘Gill Sans’", "‘Gill Sans MT’", "‘Myriad Pro’", Myriad, "‘DejaVu Sans Condensed’", "‘Liberation Sans’", "‘Nimbus Sans L’", Tahoma, Geneva, "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
-.container3 > button {
-    background-color: rgb(250, 229, 68);
+.btn-cont3 {
+    background-color: rgb(255, 213, 0);
+    color: rgb(5, 51, 97);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 12px 50px;
-    margin-top: 50px;
+    margin-top: 30px;
+    height: 50px;
     font-weight: bold;
-    }
-    .container3 > button:hover {
-        background-color: yellow;
-    }
+}
+
+.btn-cont3:hover {
+    background-color: rgb(255, 234, 0);;
+}
 
 
 #selectcredit {
@@ -483,4 +515,10 @@ ul {
     white-space: nowrap;
     max-width: 100%;
     
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #888;
+    padding-left: 10px;
 }
