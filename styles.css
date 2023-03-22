@@ -374,7 +374,9 @@ ul {
 
 .blocosec2>div>h1 {
     font-size: 28px;
-    padding-top: 30px;
+    font-family: CarMaxSharpSansDisp-Bold, Frutiger, "‘Frutiger Linotype’", Univers, Calibri, "‘Gill Sans’", "‘Gill Sans MT’", "‘Myriad Pro’", Myriad, "‘DejaVu Sans Condensed’", "‘Liberation Sans’", "‘Nimbus Sans L’", Tahoma, Geneva, "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+    color: #053361;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -428,7 +430,7 @@ ul {
     
 }
 
-#container :hover {
+.fundocar:hover {
         border: solid rgb(5, 51, 97) 1px;
 }
 
