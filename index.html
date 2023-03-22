@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +9,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    span
+    {
+        position: absolute;
+        right: 10px;
+    }
+</style>
+<body>
+    <div class="search">
+        <input type="text" name="serach" id="search" placeholder="search by make, model, or keyword">
+        <i class='bx bx-search bx-md'></i>
+    </div>
+
+    <button class="message-button">
+        <i class='bx bxs-message white bx-md'></i>
+    </button>
+    
+    <div class="feedback">
+        <button><b>FEEDBACK</b></button>
+    </div>
+
     <script type="text/javascript">
         function abrir() {
             document.getElementById('a-popup').style.display = 'block';
@@ -20,7 +44,7 @@
 <body>
     <header>
         <div class="header-container">
-            
+
             <nav>
                 <div class="lista">
                     <div class="logo">
@@ -36,22 +60,25 @@
                         <a class="a-header" href="">Finance</a>
                     </div>
                     <div>
-                        <select class="options" name="more" id="more" value="More" onmouseover="abrir();" onmouseleave="fechar();">
+                        <select class="options" name="more" id="more" value="More" onmouseover="abrir();"
+                            onmouseleave="fechar();">
                             <option value="">More</option>
                         </select>
-                    </div>    
+                    </div>
                 </div>
             </nav>
             <div class="login">
                 <nav>
                     <div class="div-icons">
-                         <button class="botao">
+                        <button class="botao">
                             <div>
                                 <img class="img-btn" src="imagens/pino.png" alt="">
                             </div>
                             <div class="zip-city">
                                 <span class="zip">Your store for 66204</span><br>
-                                <span><select class="city" name="" id=""><option value="">Kansas city</option></select></span>
+                                <span><select class="city" name="" id="">
+                                        <option value="">Kansas city</option>
+                                    </select></span>
                             </div>
                         </button>
                         <a id="favoritos" href=""><img class="icons" src="imagens/coracao.png" alt=""></a>
@@ -74,7 +101,7 @@
     <br>
     <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi)<i class='bx bxs-info-circle'></i> </p> 
     <br><br>
-    <button class="botaoamarelo">SERCH CARS</button>
+    <button class="botaoamarelo">SEARCH CARS</button>
 </section>
 <section>
     <img class="imagem-s3" src="imagens/rtb-xl.jpg" alt="">
@@ -104,5 +131,80 @@
         </button>
     </div>
 </section>
+        <section class="tituloebotao">
+            <h1>
+                Love Your Car <br> Guarantee<span>
+                    <li class='bx bx-registered bx-sm'></li>
+                </span>
+            </h1>
+            <br>
+            <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi)<i class='bx bxs-info-circle'></i>
+            </p>
+            <br><br>
+            <button class="botaoamarelo">SERCH CARS</button>
+        </section>
+    </header>
+    <section>
+        <div class="blocosec2">
+            <div>
+                <h1>Pre-qualify with no impact to your credit</h1>
+            </div>
+            <div>
+                <p>What kinds of cars do you want?</p>
+            </div>
+            <div id="container">
+                <div class="fundocar">
+                    <img class="car" src="carro.png" alt="">
+                    <p class="txtcar">Coupe</p>
+                </div>
+                <div class="fundocar">
+                    <img class="car" src="carro.png" alt="">
+                    <p class="txtcar">Coupe</p>
+                </div>
+                <div class="fundocar">
+                    <img class="car" src="carro.png" alt="">
+                    <p class="txtcar">Coupe</p>
+                </div>
+                <div class="fundocar">
+                    <img class="car" src="carro.png" alt="">
+                    <p class="txtcar">Coupe</p>
+                </div>
+                <div class="fundocar">
+                    <img class="car" src="carro.png" alt="">
+                    <p class="txtcar">Coupe</p>
+                </div>
+            </div>
+            <div id="container2">
+                <div class="fundocar3">
+                    <p class="txtvalue">Monthy Payment</p>
+                    <p class="txtvalue2">$ 400.00</p>
+                </div>
+                <div class="fundocar3">
+                    <p class="txtvalue">Monthy Payment</p>
+                    <p class="txtvalue2">$ 400.00</p>
+                </div>
+                <div class="fundocar3">
+                    <p class="txtvalue">Credit Score</p>
+                    <select name="selectcredit" id="selectcredit">
+                        <option value="Excellent (800 + FICO&reg Score)">Excellent (800 + FICO&reg Score)</option>
+                        <option value="Very Good (740-799+ FICO&reg Score)">Very Good (800 + FICO&reg Score)</option>
+                        <option selected value="Fair (800 + FICO&reg Score)">Fair (800 + FICO&reg Score)</option>
+                        <option value="Good (800 + FICO&reg Score)">Good (800 + FICO&reg Score)</option>
+                        <option value="Challenged (800 + FICO&reg Score)">Challenged (800 + FICO&reg Score)</option>
+                    </select>
+
+                </div>               
+                
+            </div>
+            <div class="container3">
+                <p id="txtcont3">Est. Vehicle Price <button class="btn-info"><i class='bx bxs-info-circle' style='color:#686464'  ></i></button></p>
+                <p id="txt-lg-cont3">$ 20,791</p>
+                <button>GET PRE-QUALIFIELD</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>teste</h1>
+    </section>
 </body>
 </html>
