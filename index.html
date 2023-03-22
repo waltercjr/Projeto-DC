@@ -28,5 +28,78 @@
     <div class="feedback">
         <button><b>FEEDBACK</b></button>
     </div>
+=======
+    <script type="text/javascript">
+        function abrir() {
+            document.getElementById('a-popup').style.display = 'block';
+        }
+        function fechar() {
+            document.getElementById('a-popup').style.display = 'none';
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            
+            <nav>
+                <div class="lista">
+                    <div class="logo">
+                        <img class="img-logo" src="imagens/logo.png" alt="logo-carmax">
+                    </div>
+                    <div>
+                        <a class="a-header" href="">Shop</a>
+                    </div>
+                    <div>
+                        <a class="a-header" href="">Sell/Trade</a>
+                    </div>
+                    <div>
+                        <a class="a-header" href="">Finance</a>
+                    </div>
+                    <div>
+                        <select class="options" name="more" id="more" value="More" onmouseover="abrir();" onmouseleave="fechar();">
+                            <option value="">More</option>
+                        </select>
+                    </div>    
+                </div>
+            </nav>
+            <div class="login">
+                <nav>
+                    <div class="div-icons">
+                         <button class="botao">
+                            <div>
+                                <img class="img-btn" src="imagens/pino.png" alt="">
+                            </div>
+                            <div class="zip-city">
+                                <span class="zip">Your store for 66204</span><br>
+                                <span><select class="city" name="" id=""><option value="">Kansas city</option></select></span>
+                            </div>
+                        </button>
+                        <a id="favoritos" href=""><img class="icons" src="imagens/coracao.png" alt=""></a>
+                        <a id="login" href=""><img class="icons" src="imagens/pessoa.png" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <img class="imagem" src="imagens/lycg-xl.jpg" alt="">
+        <div id="a-popup" class="a-popup">
+            <a class="a1" href="">Service & Repair</a>
+            <a class="a1" href="">FAQ & Support</a>
+            <a class="a1" href="">Why CarMax</a>
+        </div>
+        
+<section class="tituloebotao">
+    <h1>
+        Love Your Car <br> Guarantee<span><li class='bx bx-registered bx-sm' ></li></span>
+    </h1>
+    <br>
+    <p class="subtitulo"> Take 30 days to love it or return it (up to 1500mi)<i class='bx bxs-info-circle'></i> </p> 
+    <br><br>
+    <button class="botaoamarelo">SERCH CARS</button>
+</section>
+    </header>
 </body>
 </html>
