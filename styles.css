@@ -8,9 +8,9 @@
 #search
 {
     display: flex;
-    margin-left: 11%;
-    width : 78%;
-    height: 7vh;
+    margin-left: 8%;
+    width : 83%;
+    height: 45px;
     border-radius: 6px;
     border: none;
 }
@@ -35,11 +35,10 @@
     border: none;
     background-color: rgb(255, 255, 255);
     color: #555;
-    height: 25px;
     rotate: -90deg;   
     right: -40px;
     position: absolute;
-    padding: 10px 20px 25px;
+    padding: 10px 20px 10px;
     
 }
 .feedback
@@ -83,7 +82,7 @@
 }
 
 .tituloebotao {
-    padding-left: 160px;
+    padding-left: 120px;
     padding-top: 160px;
 }
 
@@ -133,6 +132,7 @@ span {
     width: 100%;
     position: absolute;
     z-index: 3000;
+    gap: 200px;
 
 }
 
@@ -207,7 +207,7 @@ span {
     height: 100%;
     left: 50%;
     object-fit: cover;
-    object-position: center top;
+    object-position: 30% top;
     position: absolute;
     transform: translate(-50%);
     width: 100%;
@@ -427,7 +427,7 @@ ul {
         width: 153px;
         height: 60px;
         border-radius: 10px;
-    
+        
 }
 
 .fundocar:hover {
@@ -455,7 +455,6 @@ ul {
     font-size: 20px;
     color: #100e0e;
     text-align: left;
-    
     width: 120px;
 }
 
@@ -516,7 +515,7 @@ ul {
     overflow: hidden;
     white-space: nowrap;
     max-width: 100%;
-    
+    border: none;
 }
 
 ::-webkit-input-placeholder {
